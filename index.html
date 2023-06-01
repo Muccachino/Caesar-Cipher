@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Caesar Cipher</title>
+  </head>
+  <body>
+    <section id="main">
+      <h2>Caesar Cipher</h2>
+      <div id="inBox">
+        <textarea id="input"></textarea>
+      </div>
+      <div id="settings">
+        <input id="shiftNumber" type="text" />
+        <button id="shiftButton">Cipher/Decipher</button>
+      </div>
+      <div id="outBox">
+        <textarea id="output"></textarea>
+      </div>
+    </section>
+    <section id="explanation">
+      <p>
+        The Caesar Cipher encrypts a text by shifting the letters by a specified
+        number in the alphabet. <br />
+        For example the word "Hello" would be "Mjqqt" if you shift it by the
+        value 5. <br />
+        To use this cipher you write your text in the left area and type a
+        number between 1 and 25 in the small middle area. <br />
+        To decipher a text you also put your text in the left area, but type a
+        negative number as shift value (e.g. -5).
+      </p>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
